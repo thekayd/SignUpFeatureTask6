@@ -68,11 +68,11 @@ The project focuses on secure data transmission, storage, and appropriate securi
 └── README.md
 ````
 
-##Setup Instructions
+**Setup Instructions**
 1. Clone the repository
 To get started with the project, clone the repository:
 
-bash
+```bash
 
 Copy code
 
@@ -80,10 +80,11 @@ git clone
 
 
 https://github.com/thekayd/SignUpFeatureTask6.git
+```
 
 cd SignUpFeatureTask6
 
-2. Install Dependencies
+**2. Install Dependencies**
 
 For the frontend:
 
@@ -99,7 +100,7 @@ Copy code
 cd backend
 npm install
 ```
-##3. Configure Environment Variables
+**3. Configure Environment Variables**
 For the backend, create a .env file in the backend directory and add the following environment variables:
 
 ```makefile
@@ -111,8 +112,9 @@ JWT_SECRET=your_secret_key
 
 Replace your_mongo_uri with your actual MongoDB connection string and your_secret_key with a strong secret key for JWT.
 
-##4. Running the Application
-#start the backend:
+**4. Running the Application**
+
+start the backend:
 
 ```bash
 Copy code
@@ -121,7 +123,7 @@ npm start
 ```
 The backend should be running on http://localhost:5000.
 
-#Start the frontend:
+Start the frontend:
 
 ```bash
 Copy code
@@ -130,8 +132,9 @@ npm start
 ```
 The frontend should be running on http://localhost:3000.
 
-##Running the Project
-#1. Backend:
+**Running the Project**
+
+1. Backend:
 To run the backend server, navigate to the backend folder and use:
 
 ```bash
@@ -140,7 +143,7 @@ npm start
 ```
 This will launch the Express server and connect to MongoDB.
 
-#2. Frontend:
+2. Frontend:
 To run the frontend locally, use the following command in the frontend folder:
 
 ```bash
@@ -152,7 +155,7 @@ This will launch the React development server and open the app in your browser.
 
 
 
-##Important Security Features
+**Important Security Features**
 
 Password Hashing: User passwords are hashed using bcrypt before being stored in the database for better security.
 
@@ -162,7 +165,7 @@ Input Validation: The form ensures that required fields are filled in correctly 
 
 Secure Data Transmission: HTTPS should be used in production for secure data transmission.
 
-##Future Enhancements
+**Future Enhancements**
 Email Verification: Implement an email verification feature to confirm user email addresses before allowing login.
 
 Rate Limiting: Introduce rate limiting on the signup and login endpoints to prevent abuse.
